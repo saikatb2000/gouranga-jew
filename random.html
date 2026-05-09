@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Gouranga Jewellers</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/gs logo.png">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gouranga Jewellers & Son</title>
+  <meta name="description" content="Discover Gouranga Jewellers & Son – a trusted name in gold jewellery, offering certified purity, handcrafted designs, and timeless elegance.">
 
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Gouranga Jewellers & Son | Trusted Gold Jewellery">
+  <meta property="og:description" content="Explore our legacy of trust, certified gold purity, and handcrafted jewellery designed for every special moment.">
+  <meta property="og:image" content="./assets/gs logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saikatb2000.github.io/gouranga-jew/index.html">
+  <link rel="icon" href="./assets/gs logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-<!-- ================= HEADER (UNCHANGED) ================= -->
-<header>
+  <header>
     <div class="container header-wrap">
       <div class="brand">
         <a href="index.html">
-          <img src="./assets/gs logo.png" alt="Gouranga Jewellers Logo">
+        <img src="./assets/gs logo.png" alt="Gouranga Jewellers Logo">
         </a>
         <div>
           <h2>Gouranga Jewellers & Son</h2>
@@ -24,58 +30,110 @@
       </div>
       <div class="nav-btns">
         <button class="btn btn-outline" onclick="window.location.href='about.html'">About Us</button>
-        <button class="btn btn-outline" onclick="window.location.href='products.html'">Products</button>
         <button class="btn btn-gold" onclick="window.location.href='contact.html'">Enquire Now</button>
       </div>
       <div class="mobile-menu" onclick="toggleMenu()">☰</div>
       <div class="mobile-dropdown" id="mobileDropdown">
         <button class="btn btn-outline" onclick="window.location.href='about.html'">About Us</button>
-        <button class="btn btn-outline" onclick="window.location.href='products.html'">Products</button>
         <button class="btn btn-gold" onclick="window.location.href='contact.html'">Enquire Now</button>
       </div>
+
     </div>
   </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="container" style="text-align:center;">
-    <p class="gold">CONTACT US</p>
-    <h1>Let’s Connect With You</h1>
-    <p style="max-width:700px;margin:20px auto;color:#DDD3C4;">
-      Have questions about our jewellery or want to visit our store? 
-      Fill the form below and connect with us instantly on WhatsApp.
-    </p>
-  </div>
-</section>
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <p class="gold">LUXURY GOLD JEWELLERY SINCE TRADITION BEGAN</p>
+        <h1>Crafted to Shine.<br><span class="gold">Designed to Be Remembered.</span></h1>
+        <p>Discover handcrafted gold jewellery collections that blend timeless elegance with modern sophistication.</p>
+        <div style="display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;">
+          <button class="btn btn-outline" onclick="window.location.href='about.html'">About Us</button>
+          <button class="btn btn-gold" onclick="window.location.href='contact.html'">Contact Us</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80">
+      </div>
+    </div>
+  </section>
 
-<!-- ================= CONTACT FORM ================= -->
-<section class="container" style="padding:60px 0;">
-  <div class="cta-box" style="max-width:700px;margin:auto;">
+  <section class="container" style="padding-top:40px;">
+    <div class="section-title">
+      <p class="gold" style="margin-bottom:10px;letter-spacing:2px;">WHY US</p>
+      <h2>Why Choose Gouranga Jewellers?</h2>
+      <p style="max-width:700px;margin:16px auto 0;color:#DDD3C4;">
+        We combine heritage craftsmanship, certified purity, and timeless design to create jewellery that celebrates every special moment with unmatched elegance.
+      </p>
+    </div>
+  </section>
 
-    <form onsubmit="sendToWhatsApp(event)" style="display:flex;flex-direction:column;gap:16px;">
+  <section class="container trust-grid">
+    <div class="trust-box"><h3 class="gold">Certified Purity</h3><p>Hallmarked gold with trusted authenticity.</p></div>
+    <div class="trust-box"><h3 class="gold">Exclusive Designs</h3><p>Unique handcrafted collections.</p></div>
+    <div class="trust-box"><h3 class="gold">Legacy of Trust</h3><p>Serving generations with integrity.</p></div>
+  </section>
 
-      <input type="text" id="name" placeholder="Your Name" required
-        style="padding:14px;border-radius:10px;border:none;">
+  <section class="container" style="padding-top:40px;">
+    <div class="section-title">
+      <p class="gold" style="margin-bottom:10px;letter-spacing:2px;">KEY PRIORITY OF US</p>
+      <h2>What Matters Most to Us</h2>
+      <div style="max-width:700px;margin:24px auto 0;color:#DDD3C4;text-align:center;">
+        <p>✔ 100% Hallmarked & Certified Gold Jewellery</p>
+        <p>✔ Transparent Pricing with No Hidden Charges</p>
+        <p>✔ Exclusive Handcrafted & Custom Designs</p>
+        <p>✔ Customer Satisfaction Above Everything</p>
+        <p>✔ Trusted Jewellery Heritage Across Generations</p>
+      </div>
+    </div>
+  </section>
 
-      <input type="tel" id="phone" placeholder="Phone Number" required
-        style="padding:14px;border-radius:10px;border:none;">
+  <section class="container">
+    <div class="section-title"><h2>Our Creation</h2></div>
+    <div class="creation-grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80"><h4>Gold Necklace</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80"><h4>Bridal Collection</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80"><h4>Designer Earrings</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80"><h4>Traditional Bangles</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80"><h4>Luxury Rings</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=800&q=80"><h4>Custom Jewellery</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80"><h4>Traditional Bangles</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80"><h4>Luxury Rings</h4></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=800&q=80"><h4>Custom Jewellery</h4></div>
+    </div>
+  </section>
 
-      <input type="email" id="email" placeholder="Email Address" required
-        style="padding:14px;border-radius:10px;border:none;">
+  <section class="testimonial-section container">
+    <div class="section-title"><h2>What Our Customers Say</h2></div>
+    <button class="arrow left" onclick="moveSlider(-0.80)">&#8592;</button>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-track" id="testimonialTrack">
+        <!-- Original -->
+        <div class="testimonial"><h4>Priya S. - ⭐ 4.5</h4><p>Beautiful designs and amazing craftsmanship.</p></div>
+        <div class="testimonial"><h4>Rahul D. - ⭐ 4</h4><p>Excellent service and authentic gold quality.</p></div>
+        <div class="testimonial"><h4>Ankita R. - ⭐ 3.5</h4><p>Elegant collection with fair pricing.</p></div>
+        <div class="testimonial"><h4>Sourav M. - ⭐ 3.5</h4><p>Traditional designs with modern finishing.</p></div>
+        <div class="testimonial"><h4>Neha K. - ⭐ 4.5</h4><p>My family's trusted jeweller for years.</p></div>
+        <!-- Duplicate for loop -->
+        <div class="testimonial"><h4>Priya S. - ⭐ 4.5</h4><p>Beautiful designs and amazing craftsmanship.</p></div>
+        <div class="testimonial"><h4>Rahul D. - ⭐ 4</h4><p>Excellent service and authentic gold quality.</p></div>
+        <div class="testimonial"><h4>Ankita R. - ⭐ 3.5</h4><p>Elegant collection with fair pricing.</p></div>
+        <div class="testimonial"><h4>Sourav M. - ⭐ 3.5</h4><p>Traditional designs with modern finishing.</p></div>
+        <div class="testimonial"><h4>Neha K. - ⭐ 4.5</h4><p>My family's trusted jeweller for years.</p></div>
+      </div>
+    </div>
+    <button class="arrow right" onclick="moveSlider(1)">&#8594;</button>
+  </section>
 
-      <textarea id="message" placeholder="Your Message" required
-        style="padding:14px;border-radius:10px;border:none;height:120px;"></textarea>
+  <section class="container">
+    <div class="cta-box">
+      <h2>Celebrate Every Moment in Gold</h2>
+      <p>Find jewellery worthy of your most treasured memories.</p>
+      <button class="btn btn-gold" style="margin-top:24px;" onclick="window.location.href='contact.html'">Contact Us</button>
+    </div>
+  </section>
 
-      <button type="submit" class="btn btn-gold">
-        Send Message on WhatsApp
-      </button>
-
-    </form>
-
-  </div>
-</section>
-
-      <footer>
+  <footer>
   <div class="container footer-wrap" style="grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 0;">
 
     <!-- Left Info Column -->

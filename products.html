@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Collections – Gouranga Jewellers & Son</title>
+  <meta name="description" content="Browse our handcrafted gold jewellery collections at Gouranga Jewellers & Son – necklaces, bangles, earrings, rings and more.">
+  <meta property="og:title" content="Our Collections | Gouranga Jewellers & Son">
+  <meta property="og:description" content="Explore certified gold jewellery collections crafted for every special occasion.">
+  <meta property="og:image" content="./assets/gs logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./assets/gs logo.png" />
+  <link rel="stylesheet" href="st.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER (unchanged) ===== -->
+  <header>
+    <div class="container header-wrap">
+      <div class="brand">
+        <a href="index.html">
+          <img src="./assets/gs logo.png" alt="Gouranga Jewellers Logo">
+        </a>
+        <div>
+          <h2>Gouranga Jewellers & Son</h2>
+          <small>Timeless Gold. Trusted Legacy.</small>
+        </div>
+      </div>
+      <div class="nav-btns">
+        <button class="btn btn-outline" onclick="window.location.href='about.html'">About Us</button>
+        <button class="btn btn-outline" onclick="window.location.href='products.html'">Products</button>
+        <button class="btn btn-gold" onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+      <div class="mobile-dropdown" id="mobileDropdown">
+        <button class="btn btn-outline" onclick="window.location.href='about.html'">About Us</button>
+        <button class="btn btn-outline" onclick="window.location.href='products.html'">Products</button>
+        <button class="btn btn-gold" onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="gold page-hero-label">OUR COLLECTIONS</p>
+      <h1 class="page-hero-title">Handcrafted Gold<br><span class="gold">For Every Occasion</span></h1>
+      <p class="page-hero-sub">Each piece is hallmarked, certified, and crafted with generations of expertise. Find the jewellery that speaks to your story.</p>
+    </div>
+  </section>
+
+  <!-- ===== FILTER BAR ===== -->
+  <section class="container filter-section">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="necklace">Necklaces</button>
+      <button class="filter-btn" data-filter="bangle">Bangles</button>
+      <button class="filter-btn" data-filter="earring">Earrings</button>
+      <button class="filter-btn" data-filter="ring">Rings</button>
+      <button class="filter-btn" data-filter="bridal">Bridal</button>
+      <button class="filter-btn" data-filter="custom">Custom</button>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT GRID ===== -->
+  <section class="container products-section">
+    <div class="products-grid" id="productsGrid">
+
+      <!-- Necklaces -->
+      <div class="product-card" data-category="necklace">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80" alt="Gold Necklace">
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Necklace</span>
+          <h3 class="product-name">Classic Gold Necklace</h3>
+          <p class="product-desc">22 KT hallmarked gold with traditional rope-chain design, perfect for daily and festive wear.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="necklace">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80" alt="Temple Necklace">
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Necklace</span>
+          <h3 class="product-name">Temple Gold Necklace</h3>
+          <p class="product-desc">Intricately carved temple motifs inspired by South Indian craftsmanship. A timeless heirloom.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bangles -->
+      <div class="product-card" data-category="bangle">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80" alt="Traditional Bangles">
+          <span class="product-badge">Popular</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Bangles</span>
+          <h3 class="product-name">Traditional Gold Bangles</h3>
+          <p class="product-desc">Set of two classic gold bangles with engraved floral patterns — ideal for weddings and ceremonies.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bangle">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600428877878-1a0fd85beda6?auto=format&fit=crop&w=800&q=80" alt="Kada Bangle">
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Bangles</span>
+          <h3 class="product-name">Designer Kada</h3>
+          <p class="product-desc">Bold and elegant, this wide gold kada blends heritage design with contemporary finish.</p>
+          <div class="product-meta">
+            <span class="product-purity">18 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Earrings -->
+      <div class="product-card" data-category="earring">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Designer Earrings">
+          <span class="product-badge">New</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Earrings</span>
+          <h3 class="product-name">Designer Drop Earrings</h3>
+          <p class="product-desc">Graceful drop earrings with delicate gold filigree work — lightweight and stunning for every look.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="earring">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=800&q=80" alt="Jhumka Earrings">
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Earrings</span>
+          <h3 class="product-name">Gold Jhumka</h3>
+          <p class="product-desc">Classic bell-shaped jhumkas with micro-granulation detailing — a Bengali favourite for generations.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rings -->
+      <div class="product-card" data-category="ring">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Luxury Rings">
+          <span class="product-badge">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Rings</span>
+          <h3 class="product-name">Luxury Gold Ring</h3>
+          <p class="product-desc">Solitaire-style gold ring with hand-polished finish — a statement of elegance and refinement.</p>
+          <div class="product-meta">
+            <span class="product-purity">18 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="ring">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Engagement Ring">
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Rings</span>
+          <h3 class="product-name">Couple Band</h3>
+          <p class="product-desc">Matching couple bands in polished yellow gold — crafted to celebrate your forever bond.</p>
+          <div class="product-meta">
+            <span class="product-purity">18 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bridal -->
+      <div class="product-card product-card--wide" data-category="bridal">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80" alt="Bridal Collection">
+          <span class="product-badge product-badge--bridal">Bridal Special</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Bridal</span>
+          <h3 class="product-name">Complete Bridal Set</h3>
+          <p class="product-desc">An opulent bridal collection featuring necklace, earrings, maang tikka, bangles, and rings — everything to make your wedding day shine in pure gold.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom -->
+      <div class="product-card" data-category="custom">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80" alt="Custom Jewellery">
+          <span class="product-badge product-badge--custom">Custom Order</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Custom</span>
+          <h3 class="product-name">Bespoke Design</h3>
+          <p class="product-desc">Have a design in mind? Our master craftsmen will bring your vision to life with certified gold and precision craftsmanship.</p>
+          <div class="product-meta">
+            <span class="product-purity">18 / 22 KT</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="custom">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=800&q=80" alt="Name Locket">
+        </div>
+        <div class="product-info">
+          <span class="product-category-label">Custom</span>
+          <h3 class="product-name">Personalised Name Locket</h3>
+          <p class="product-desc">A cherished gift — your name or a loved one's etched in gold. Perfect for birthdays and anniversaries.</p>
+          <div class="product-meta">
+            <span class="product-purity">22 KT · Hallmarked</span>
+            <button class="btn btn-gold product-enquire" onclick="window.location.href='contact.html'">Enquire</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /products-grid -->
+
+    <!-- Empty state (shown when filter has no results) -->
+    <div class="products-empty" id="productsEmpty" style="display:none;">
+      <p class="gold" style="font-size:32px;">✦</p>
+      <p>No items found in this category yet.<br>Please <a href="contact.html" style="color:#C9B090;text-decoration:underline;">contact us</a> for a custom enquiry.</p>
+    </div>
+
+  </section>
+
+  <!-- ===== WHY CERTIFIED ===== -->
+  <section class="container certified-strip">
+    <div class="certified-item">
+      <span class="certified-icon">🏅</span>
+      <div>
+        <h4 class="gold">100% Hallmarked</h4>
+        <p>BIS certified purity on every piece</p>
+      </div>
+    </div>
+    <div class="certified-item">
+      <span class="certified-icon">🤝</span>
+      <div>
+        <h4 class="gold">Transparent Pricing</h4>
+        <p>No hidden making charges</p>
+      </div>
+    </div>
+    <div class="certified-item">
+      <span class="certified-icon">✦</span>
+      <div>
+        <h4 class="gold">Handcrafted</h4>
+        <p>Master artisans, every detail</p>
+      </div>
+    </div>
+    <div class="certified-item">
+      <span class="certified-icon">🔄</span>
+      <div>
+        <h4 class="gold">Easy Exchange</h4>
+        <p>Hassle-free gold exchange policy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="container">
+    <div class="cta-box">
+      <h2>Can't Find What You're Looking For?</h2>
+      <p>We specialise in custom orders. Share your design idea and our craftsmen will create it just for you.</p>
+      <button class="btn btn-gold" style="margin-top:24px;" onclick="window.location.href='contact.html'">Request Custom Design</button>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (unchanged) ===== -->
+  <footer>
+    <div class="container footer-wrap" style="grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 0;">
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div>
+          <h2 class="gold">Visit Our Store</h2>
+          <p style="margin-top: 10px; color: #DDD3C4; line-height: 1.6;">
+            Near Dipak Cinema, Charaktala,<br>
+            Bidhan Sarani, Makhla, Uttarpara,<br>
+            West Bengal 712245
+          </p>
+        </div>
+        <div>
+          <h4 class="gold" style="margin-bottom: 12px;">Pages</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="about.html" style="color: #DDD3C4; transition: color .2s;" onmouseover="this.style.color='#C9B090'" onmouseout="this.style.color='#DDD3C4'">About Us</a></li>
+            <li><a href="contact.html" style="color: #DDD3C4; transition: color .2s;" onmouseover="this.style.color='#C9B090'" onmouseout="this.style.color='#DDD3C4'">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="gold" style="margin-bottom: 12px;">Follow Us</h4>
+          <div style="display: flex; gap: 14px;">
+            <a href="#" target="_blank" aria-label="Facebook" style="width:42px;height:42px;border-radius:50%;background:#373C41;border:1px solid rgba(176,138,99,.3);display:flex;align-items:center;justify-content:center;transition:.3s;" onmouseover="this.style.borderColor='#C9B090'" onmouseout="this.style.borderColor='rgba(176,138,99,.3)'">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9B090"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram" style="width:42px;height:42px;border-radius:50%;background:#373C41;border:1px solid rgba(176,138,99,.3);display:flex;align-items:center;justify-content:center;transition:.3s;" onmouseover="this.style.borderColor='#C9B090'" onmouseout="this.style.borderColor='rgba(176,138,99,.3)'">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9B090" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#C9B090" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/919999999999" target="_blank" aria-label="WhatsApp" style="width:42px;height:42px;border-radius:50%;background:#373C41;border:1px solid rgba(176,138,99,.3);display:flex;align-items:center;justify-content:center;transition:.3s;" onmouseover="this.style.borderColor='#C9B090'" onmouseout="this.style.borderColor='rgba(176,138,99,.3)'">
+              <svg width="18" height="18" viewBox="0 0 32 32" fill="#C9B090"><path d="M16.02 3C8.84 3 3 8.73 3 15.8c0 2.49.72 4.92 2.08 7L3 29l6.4-2.04a13.1 13.1 0 0 0 6.62 1.79h.01C23.2 28.75 29 23.02 29 15.95 29 8.88 23.2 3 16.02 3zm0 23.3h-.01c-2.08 0-4.12-.56-5.9-1.62l-.42-.25-3.8 1.21 1.24-3.69-.27-.38a10.9 10.9 0 0 1-1.73-5.77c0-6.03 4.96-10.94 11.06-10.94 6.1 0 11.06 4.91 11.06 10.95 0 6.03-4.96 10.94-11.07 10.94z"/><path d="M19.11 17.21c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.61.13-.18.27-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.13-1.31-.79-.71-1.32-1.58-1.47-1.85-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.13.18 1.91 2.92 4.63 4.09.65.28 1.15.44 1.54.56.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.83-1.27.22-.63.22-1.17.16-1.27-.07-.11-.25-.18-.52-.31z"/></svg>
+            </a>
+            <a href="#" target="_blank" aria-label="YouTube" style="width:42px;height:42px;border-radius:50%;background:#373C41;border:1px solid rgba(176,138,99,.3);display:flex;align-items:center;justify-content:center;transition:.3s;" onmouseover="this.style.borderColor='#C9B090'" onmouseout="this.style.borderColor='rgba(176,138,99,.3)'">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#C9B090"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#373C41"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.123!2d88.336993!3d22.6697778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89cdb3bfff769%3A0xb6c74228db06b1a9!2sGouranga%20Jewellers!5e0!3m2!1sen!2sin!4v1"
+        width="100%" height="320"
+        style="border:none; border-radius:20px;"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="copyright">© 2026 Gouranga Jewellers & Son. All Rights Reserved.</div>
+  </footer>
+
+  <a href="https://wa.me/918961861101" class="whatsapp" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.02 3C8.84 3 3 8.73 3 15.8c0 2.49.72 4.92 2.08 7L3 29l6.4-2.04a13.1 13.1 0 0 0 6.62 1.79h.01C23.2 28.75 29 23.02 29 15.95 29 8.88 23.2 3 16.02 3zm0 23.3h-.01c-2.08 0-4.12-.56-5.9-1.62l-.42-.25-3.8 1.21 1.24-3.69-.27-.38a10.9 10.9 0 0 1-1.73-5.77c0-6.03 4.96-10.94 11.06-10.94 6.1 0 11.06 4.91 11.06 10.95 0 6.03-4.96 10.94-11.07 10.94z"/>
+      <path d="M19.11 17.21c-.27-.13-1.6-.79-1.85-.88-.25-.09-.43-.13-.61.13-.18.27-.7.88-.86 1.06-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.13-1.31-.79-.71-1.32-1.58-1.47-1.85-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.11 2.81.13.18 1.91 2.92 4.63 4.09.65.28 1.15.44 1.54.56.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.83-1.27.22-.63.22-1.17.16-1.27-.07-.11-.25-.18-.52-.31z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // Filter logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+    const emptyState = document.getElementById('productsEmpty');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        let visible = 0;
+        productCards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        emptyState.style.display = visible === 0 ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
