@@ -7,11 +7,13 @@
   <meta name="description" content="Discover Gouranga Jewellers & Son – a trusted name in gold jewellery, offering certified purity, handcrafted designs, and timeless elegance.">
 
   <!-- Open Graph -->
+   
   <meta property="og:title" content="Gouranga Jewellers & Son | Trusted Gold Jewellery">
   <meta property="og:description" content="Explore our legacy of trust, certified gold purity, and handcrafted jewellery designed for every special moment.">
   <meta property="og:image" content="./assets/gs logo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saikatb2000.github.io/gouranga-jew/index.html">
+  <link rel="manifest" href="manifest.json">
   <link rel="icon" href="./assets/gs logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -103,15 +105,15 @@
     <div class="creation-grid">
       <div class="card">
         <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=80">
-        <h4>Gold Necklace</h4>
+        <h4><a href="product1.html">Necklace</a></h4>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80">
-        <h4>Bridal Collection</h4>
+        <h4><a href="product2.html">Bridal Collection</a></h4>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80">
-        <h4>Designer Earrings</h4>
+        <h4><a href="product3.html">Designer Earrings</a></h4>
       </div>
     </div>
     <!-- CTA below the cards -->
@@ -222,6 +224,41 @@
   </a>
 
   <script src="script.js"></script>
+
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker Registered'))
+    .catch(err => console.log(err));
+}
+</script>
+
+<button id="installBtn" style="display:none;">
+  Install App
+</button>
+
+<script>
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  document.getElementById('installBtn').style.display = 'block';
+});
+
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if (!deferredPrompt) return;
+
+  deferredPrompt.prompt();
+
+  const { outcome } = await deferredPrompt.userChoice;
+  console.log(`User response: ${outcome}`);
+
+  deferredPrompt = null;
+});
+</script>
+  
 
 </body>
 </html>
