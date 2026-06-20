@@ -94,6 +94,23 @@
   </section>
 
   <!-- ===== COLLECTION OF THE MONTH ===== -->
+   <section class="container video-showcase">
+  <div class="section-title">
+    <p class="gold" style="margin-bottom:10px;letter-spacing:2px;">WATCH OUR CRAFTSMANSHIP</p>
+    <h2>Featured Jewellery Showcase</h2>
+    <p style="max-width:700px;margin:16px auto 0;color:#DDD3C4;">
+      Discover the elegance, shine, and craftsmanship behind our finest jewellery collections.
+    </p>
+  </div>
+
+  <div class="video-container">
+    <video controls autoplay muted loop playsinline poster="images/video-thumbnail.jpg">
+      <source src="assets/snapsave-app_925_hd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
   <section class="container">
     <div class="section-title">
       <p class="gold" style="margin-bottom:10px;letter-spacing:2px;">HANDPICKED FOR YOU</p>
@@ -125,26 +142,68 @@
   </section>
 
   <section class="testimonial-section container">
-    <div class="section-title"><h2>What Our Customers Say</h2></div>
-    <button class="arrow left" onclick="moveSlider(-0.80)">&#8592;</button>
-    <div class="testimonial-wrapper">
-      <div class="testimonial-track" id="testimonialTrack">
-        <!-- Original -->
-        <div class="testimonial"><h4>Priya S. - ⭐ 4.5</h4><p>Beautiful designs and amazing craftsmanship.</p></div>
-        <div class="testimonial"><h4>Rahul D. - ⭐ 4</h4><p>Excellent service and authentic gold quality.</p></div>
-        <div class="testimonial"><h4>Ankita R. - ⭐ 3.5</h4><p>Elegant collection with fair pricing.</p></div>
-        <div class="testimonial"><h4>Sourav M. - ⭐ 3.5</h4><p>Traditional designs with modern finishing.</p></div>
-        <div class="testimonial"><h4>Neha K. - ⭐ 4.5</h4><p>My family's trusted jeweller for years.</p></div>
-        <!-- Duplicate for loop -->
-        <div class="testimonial"><h4>Priya S. - ⭐ 4.5</h4><p>Beautiful designs and amazing craftsmanship.</p></div>
-        <div class="testimonial"><h4>Rahul D. - ⭐ 4</h4><p>Excellent service and authentic gold quality.</p></div>
-        <div class="testimonial"><h4>Ankita R. - ⭐ 3.5</h4><p>Elegant collection with fair pricing.</p></div>
-        <div class="testimonial"><h4>Sourav M. - ⭐ 3.5</h4><p>Traditional designs with modern finishing.</p></div>
-        <div class="testimonial"><h4>Neha K. - ⭐ 4.5</h4><p>My family's trusted jeweller for years.</p></div>
+
+  <div class="section-title">
+    <h2>What Our Customers Say</h2>
+  </div>
+
+  <button class="arrow left" onclick="moveSlider(-1)">‹</button>
+
+  <div class="testimonial-wrapper">
+
+    <div class="testimonial-track" id="testimonialTrack">
+
+      <div class="testimonial">
+        <h4>Arpan Bhowmick<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>My first purchase experience with Gouranga Jewellers was amazing and I love the designs which are beautiful, simple, unique and elegant. Each jewels has its own beauty. I highly recommend Gouranga Jewellers if you are looking for elegant jewels with unique designs and high quality at a very reasonable price.</p>
       </div>
+
+      <div class="testimonial">
+        <h4>Laly Chakraborty<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>Made my first purchase which is a 1gm gold coin, but to deliver me the best Gouranga Jewellers have put so much effort and I got a special Victoria coin, which is unbelievable. I was expecting a basic logo coin but this is beyond my expectations and I am more than happy with my purchase. Also rates are very affordable and quality is no less than any leading national gold brand. Looking forward to many more purchases.</p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Mayank Ray<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>The other name of authenticity, once you visit this shop, I am sure you will not just buy jewellery but also build up a lifetime relationship with Mr Anandalal Karmakar &amp; Pranesh Karmakar as they will guide you to choose the best among their wide range of collections. Very courteous and reasonably priced shop.</p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Priyanka Ghosh<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>One of the best jewellery shops. Unique, exquisite designs with reasonable prices and ever so gentle and humble behaviour with the customers is surely heart warming.</p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Nisha Mallick<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>My first purchase experience with Gouranga Jewellers was amazing and I love the designs which are beautiful, simple, unique and elegant. Each jewels has its own beauty. I highly recommend Gouranga Jewellers if you are looking for elegant jewels with unique designs and high quality at a very reasonable price.</p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Rimita Manna<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>Very good design jewelry can be found here. Trustable and authentic.</p>
+      </div>
+
+      <div class="testimonial">
+        <h4>Sheik Fiza<br><span style="color:#fbbc04;">★★★★★</span></h4>
+        <p>A very good gold shop with unique jewellery designs and reasonable price ranges.</p>
+      </div>
+
     </div>
-    <button class="arrow right" onclick="moveSlider(1)">&#8594;</button>
-  </section>
+
+  </div>
+
+  <button class="arrow right" onclick="moveSlider(1)">›</button>
+
+</section>
+
+<!-- Review Popup -->
+<div id="reviewModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
 
   <section class="container">
     <div class="cta-box">

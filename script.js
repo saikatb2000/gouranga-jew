@@ -1,17 +1,116 @@
-const track = document.getElementById('testimonialTrack');
+document.addEventListener("DOMContentLoaded", () => {
 
-function moveSlider(direction) {
-  track.scrollBy({ left: direction * 340, behavior: 'smooth' });
-}
+  /* ==========================
+     TESTIMONIAL SLIDER
+  ========================== */
 
-setInterval(() => {
-  track.scrollBy({ left: 340, behavior: 'smooth' });
-}, 4000);
+  const track = document.getElementById("testimonialTrack");
 
-function toggleMenu() {
-  const menu = document.getElementById("mobileDropdown");
-  menu.classList.toggle("show");
-}
+  if (track) {
+
+    // Duplicate reviews for infinite loop
+    track.innerHTML += track.innerHTML;
+
+    let position = 0;
+    let autoScroll = true;
+    const speed = 0.35;
+
+    function animate() {
+
+      if (autoScroll) {
+
+        position += speed;
+
+        if (position >= track.scrollWidth / 2) {
+          position = 0;
+        }
+
+        track.style.transform = `translateX(-${position}px)`;
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    // Arrow buttons
+    window.moveSlider = function(direction) {
+
+      position += direction * 320;
+
+      if (position < 0) {
+        position = track.scrollWidth / 2;
+      }
+
+      if (position >= track.scrollWidth / 2) {
+        position = 0;
+      }
+
+      track.style.transform = `translateX(-${position}px)`;
+    };
+
+    /* ==========================
+       REVIEW POPUP
+    ========================== */
+
+    const modal = document.getElementById("reviewModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalText = document.getElementById("modalText");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".testimonial").forEach(card => {
+
+      card.addEventListener("click", () => {
+
+        autoScroll = false;
+
+        if (modalTitle) {
+          modalTitle.innerHTML =
+            card.querySelector("h4").innerHTML;
+        }
+
+        if (modalText) {
+          modalText.textContent =
+            card.querySelector("p").textContent;
+        }
+
+        if (modal) {
+          modal.style.display = "flex";
+        }
+
+      });
+
+    });
+
+    if (closeBtn) {
+
+      closeBtn.addEventListener("click", () => {
+
+        if (modal) {
+          modal.style.display = "none";
+        }
+
+        autoScroll = true;
+
+      });
+
+    }
+
+    window.addEventListener("click", (e) => {
+
+      if (e.target === modal) {
+
+        modal.style.display = "none";
+        autoScroll = true;
+
+      }
+
+    });
+
+  }
+
+});
+
 // WhatsApp Form Submission
 function sendToWhatsApp(e) {
   e.preventDefault();
